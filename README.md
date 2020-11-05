@@ -19,6 +19,29 @@
         }
     }
 
+<p align='justify'><b>/Entrada Digital</b><br>O programa irá ligar e desligar o LED conectado ao pino 13 até que uma chave táctil conectada ao pino digital 2 Arduino seja pressionada.</p>
+
+    programa {
+        inclua biblioteca Arduino --> arduino
+        inclua biblioteca Util --> util
+	
+        funcao inicio() {
+            arduino.conectar("COM3")
+            inteiro estado = 1
+       
+            enquanto (arduino.lerDigital(2) == 0) {
+                arduino.escreverDigital(13, estado)
+                se (estado == 1)
+                    estado = 0
+                senao
+                    estado = 1
+                util.aguarde(250)
+            }
+            arduino.escreverDigital(13, 0)
+            arduino.desconectar()
+        }
+    }
+
 <p align='justify'>Este plugin utiliza as seguintes bibliotecas de terceiros:</p>
 <ul>
 <li><b>firmata4j</b><br>
