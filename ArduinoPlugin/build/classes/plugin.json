@@ -1,0 +1,11 @@
+{
+	"nome": "Plugin-Arduino",
+	"versao": "1.0.0",
+	"classe": "br.univali.portugol.plugin.arduino.PluginArduino",
+	"descricao": "Este plugin possibilita a comunicação entre o Portugol Studio e o Arduino através do protocolo Firmata.",
+	"autores": [{
+			"nome": "Cláudio Luís Vieira Oliveira",
+			"email": "claudio.oliveira@fatec.sp.gov.br"
+		}
+	]
+}
