@@ -19,7 +19,7 @@
         }
     }
 
-<p align='justify'><b>/Entrada Digital</b><br>O programa irá ligar e desligar o LED conectado ao pino 13 até que uma chave táctil conectada ao pino digital 2 Arduino seja pressionada.</p>
+<p align='justify'><b>Entrada Digital</b><br>O programa irá ligar e desligar o LED conectado ao pino 13 até que uma chave táctil conectada ao pino digital 2 Arduino seja pressionada.</p>
 
     programa {
         inclua biblioteca Arduino --> arduino
